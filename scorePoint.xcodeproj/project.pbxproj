@@ -12,6 +12,10 @@
 		3F6A68DA1C8DDF34009F05D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6A68D81C8DDF34009F05D7 /* Main.storyboard */; };
 		3F6A68DC1C8DDF34009F05D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6A68DB1C8DDF34009F05D7 /* Assets.xcassets */; };
 		3F6A68DF1C8DDF34009F05D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6A68DD1C8DDF34009F05D7 /* LaunchScreen.storyboard */; };
+		3F6A68E71C8DE556009F05D7 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A68E61C8DE556009F05D7 /* DashboardVC.swift */; };
+		3F6A68EB1C8DE6A0009F05D7 /* VSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A68E91C8DE6A0009F05D7 /* VSCell.swift */; };
+		3F6A68EC1C8DE6A0009F05D7 /* VSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F6A68EA1C8DE6A0009F05D7 /* VSCell.xib */; };
+		3F6A68F01C8E1F04009F05D7 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6A68EF1C8E1F04009F05D7 /* GameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		3F6A68DB1C8DDF34009F05D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F6A68DE1C8DDF34009F05D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F6A68E01C8DDF34009F05D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F6A68E61C8DE556009F05D7 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		3F6A68E91C8DE6A0009F05D7 /* VSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSCell.swift; sourceTree = "<group>"; };
+		3F6A68EA1C8DE6A0009F05D7 /* VSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSCell.xib; sourceTree = "<group>"; };
+		3F6A68EF1C8E1F04009F05D7 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		3F6A68D31C8DDF34009F05D7 /* scorePoint */ = {
 			isa = PBXGroup;
 			children = (
+				3F6A68ED1C8DE6AB009F05D7 /* View */,
+				3F6A68E81C8DE560009F05D7 /* Controller */,
 				3F6A68D41C8DDF34009F05D7 /* AppDelegate.swift */,
-				3F6A68D61C8DDF34009F05D7 /* ViewController.swift */,
 				3F6A68D81C8DDF34009F05D7 /* Main.storyboard */,
+				3F6A68EA1C8DE6A0009F05D7 /* VSCell.xib */,
 				3F6A68DB1C8DDF34009F05D7 /* Assets.xcassets */,
 				3F6A68DD1C8DDF34009F05D7 /* LaunchScreen.storyboard */,
 				3F6A68E01C8DDF34009F05D7 /* Info.plist */,
 			);
 			path = scorePoint;
+			sourceTree = "<group>";
+		};
+		3F6A68E81C8DE560009F05D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F6A68D61C8DDF34009F05D7 /* ViewController.swift */,
+				3F6A68E61C8DE556009F05D7 /* DashboardVC.swift */,
+				3F6A68EF1C8E1F04009F05D7 /* GameVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3F6A68ED1C8DE6AB009F05D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F6A68EE1C8DE6B0009F05D7 /* Cells */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F6A68EE1C8DE6B0009F05D7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3F6A68E91C8DE6A0009F05D7 /* VSCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6A68EC1C8DE6A0009F05D7 /* VSCell.xib in Resources */,
 				3F6A68DF1C8DDF34009F05D7 /* LaunchScreen.storyboard in Resources */,
 				3F6A68DC1C8DDF34009F05D7 /* Assets.xcassets in Resources */,
 				3F6A68DA1C8DDF34009F05D7 /* Main.storyboard in Resources */,
@@ -136,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6A68EB1C8DE6A0009F05D7 /* VSCell.swift in Sources */,
 				3F6A68D71C8DDF34009F05D7 /* ViewController.swift in Sources */,
+				3F6A68E71C8DE556009F05D7 /* DashboardVC.swift in Sources */,
+				3F6A68F01C8E1F04009F05D7 /* GameVC.swift in Sources */,
 				3F6A68D51C8DDF34009F05D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +294,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amgm.scorePoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -265,6 +306,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amgm.scorePoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -287,6 +329,7 @@
 				3F6A68E51C8DDF34009F05D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
